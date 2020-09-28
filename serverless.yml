@@ -1,0 +1,12 @@
+service: serverless-lambda-sandbox
+provider:
+  name: aws
+  runtime: nodejs12.x
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello-world
+          method: get
+          cors: true
