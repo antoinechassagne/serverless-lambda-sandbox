@@ -10,3 +10,10 @@ functions:
           path: hello-world
           method: get
           cors: true
+  double:
+    handler: handler.double
+    events:
+      - http:
+          path: double
+          method: get
+          cors: true
