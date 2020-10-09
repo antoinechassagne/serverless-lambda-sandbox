@@ -4,16 +4,16 @@ provider:
   runtime: nodejs12.x
 functions:
   hello:
-    handler: handler.hello
+    handler: dist/lambdas/hello.handler
     events:
       - http:
-          path: hello-world
-          method: get
+          path: hello
+          method: GET
           cors: true
   double:
-    handler: handler.double
+    handler: dist/lambdas/double.handler
     events:
       - http:
           path: double
-          method: get
+          method: GET
           cors: true

@@ -1,0 +1,11 @@
+{
+  "name": "serverless-sandbox",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "deploy": "serverless deploy"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.63"
+  }
+}
